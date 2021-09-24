@@ -16,6 +16,6 @@ public class WszystkiePytania {
                     new int[]{R.string.p3odp_a,
                             R.string.p3odp_b,
                             R.string.p3odp_c},
-                    new boolean[]{false,true,true})
+                    new boolean[]{true,false,true})
     };
 }

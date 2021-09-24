@@ -37,7 +37,26 @@ public class MainActivity extends AppCompatActivity {
             check.setChecked(false);
         }
     }
+    private boolean czyDobrze(int i){
+        int k=0;
+        for(CheckBox check:czekboksy){
+            if(check.isChecked() !=
+                    wszystkie.wszystkiePytania[i].getOdpPopr(k)){
+                return false;
+            }
+            k++;
+        }
+        return true;
+    }
     public void nastepny(View view) {
+        if(czyDobrze(ktorePytanie))
+        {
+            Toast.makeText(this,"Dobra odpowiedź",Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            Toast.makeText(this,"Zła odpowiedź",Toast.LENGTH_SHORT).show();
+        }
         ktorePytanie++;
         if(ktorePytanie==wszystkie.wszystkiePytania.length)
         {

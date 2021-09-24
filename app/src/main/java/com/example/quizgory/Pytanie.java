@@ -19,7 +19,7 @@ public class Pytanie {
         return odpowiedzi[i];
     }
 
-    public boolean[] getOdpPopr() {
-        return odpPopr;
+    public boolean getOdpPopr(int i) {
+        return odpPopr[i];
     }
 }
